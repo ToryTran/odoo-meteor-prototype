@@ -3,24 +3,17 @@
 </head>
 
 <body>
-  <h1>Meteor Login prototype</h1>
-
-  {{> hello}}
   {{> login_form}}
 </body>
 
 <template name="login_form">
   <div class="login-form">
     <h1> Login Odoo</h1>
+    <p> {{message}} </p>
     <form action="#">
       <input type="text" name="odoo_username" placeholder="Input Odoo Username">
       <input type="password" name="odoo_password">
-      <button name="submit" class="jSubmmit"> Login </button> 
+      <button name="submit" class="jSubmmit"> Login </button>
     </form>
   </div>
-</template>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
 </template>
