@@ -16,8 +16,6 @@ Template.login_form.helpers({
 
 Template.login_form.events({
   "click .jSubmmit"(event, instance) {
-    console.log("click on jsubmmit");
-
     Meteor.call(
       "login",
       {
@@ -26,7 +24,7 @@ Template.login_form.events({
           password: 123
         }
       },
-      function(errors, data) {
+      (errors, data) => {
         if (errors) {
           console.log("Errors: " + errors);
         } else {
