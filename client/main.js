@@ -20,8 +20,8 @@ Template.login_form.events({
       "login",
       {
         user: {
-          username: "abc",
-          password: 123
+          username: "my@odoo.com",
+          password: "odoo"
         }
       },
       (errors, data) => {
